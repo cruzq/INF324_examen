@@ -13,10 +13,9 @@
 </head>
 <body>
 	<header>
-	<h1>Carrera - Informatica</h1>
+	<h1>Inicio</h1>
 		<nav>
 		<?php 
-
 			if ($_SESSION['rol'] == "docente") {	?>
 			<a href="inicio.php">Listado</a>
 		<?php } ?>
@@ -40,15 +39,14 @@
 		</nav>
 	</header>
 	<main>
-		<h1>Sistema Academico</h1>
+		<h1>S.A.</h1>
 		<h2>Soy un <?php echo $_SESSION['rol'] ?> </h2>
 		<?php 
 			if ($_SESSION['rol'] == "estudiante") {
 				echo "visualiza notas ";
 			}else{
-
 		?>
-		<h1>Notas</h1>
+		<h1>Visualizacion de notas</h1>
 		<table>	
 			<tr>
 				<td>Departamento</td>
